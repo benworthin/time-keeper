@@ -1,14 +1,16 @@
 from datetime import datetime
 
+version = "v0.1.0"
 digitalSignature = "Benjamin A. Worthington (010895994)"
 
 today = datetime.today()
 now = today.strftime('%m-%d-%y %I:%M %p')
 
-invalidInput = True
+print(f"Time Keeper {version}")
 
+invalidInput = True
 while invalidInput:
-    action = input("Type either 'clock-in' or 'clock-out': ")
+    action = input("Type 'clock-in' or 'clock-out': ")
     action = action.upper()
 
     if action == "CLOCK-IN" or action == "CLOCK-OUT":
