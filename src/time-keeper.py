@@ -1,5 +1,3 @@
-import os
-import csv
 from datetime import datetime
 
 digitalSignature = "Benjamin A. Worthington (010895994)"
